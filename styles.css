@@ -1,0 +1,51 @@
+.page-content {
+    padding-top: 30px;
+    overflow: hidden;
+    width: 80%;           
+    margin: 100px auto;    
+}
+.card {
+    border: 3px solid rgb(246, 58, 58);
+    border-radius: 5px;
+    width: 70%;
+    margin: 3% auto; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card-header{
+    padding:1%;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(192, 192, 192);
+    text-align: center;
+}
+.profile-pic {
+    display: block;       
+    margin: 0 auto;       
+    width: 200px;        
+    height: 200px;        
+    border-radius: 50%;  
+    border: 5px solid rgb(246, 58, 58);
+}
+
+.card-body{padding:5%;}
+   
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.nav{
+background-color: rgb(237, 131, 131);
+list-style-type: none;
+text-align: center;
+position: fixed; top:0; width:100%;
+}
+.nav li{
+display: inline-block;
+font-size: 20px;
+padding: 20px;
+}
+.nav li a{
+text-decoration: none;
+color:white
+}
+
