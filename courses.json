@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
  "courses": [
  {
@@ -15,4 +16,23 @@
  "credit": "3.0"
  }
  // Add all your courses here
+=======
+{
+ "courses": [
+ {
+ "year_level": "1st",
+ "sem": "1st",
+ "code": "IT112",
+ "description": "Computer Programming 1",
+ "credit": "3.0"
+ },
+ {
+ "year_level": "1st",
+ "sem": "2nd",
+ "code": "IT113",
+ "description": "Computer Programming 2",
+ "credit": "3.0"
+ }
+ // Add all your courses here
+>>>>>>> a3ad9ec64f28284c15ae4f74a0bbff9509ac9075
  ]
