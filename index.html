@@ -103,8 +103,7 @@
             </p>
         </div>
 
-        <div class="page-content">
-
+     <div class="card" id="student-list-card">
             <h2>Student List</h2>
             <ul id="student-list" class="card-body"></ul>
         </div>
@@ -127,26 +126,24 @@
     </script>
 
     <script>
-        // Replace with your JSON file URL
-        const jsonURL = "https://xxxx.github.io/students.json";
+    const jsonURL = "https://raw.githubusercontent.com/Zsandrixx/css/main/students.json";
 
-        fetch(jsonURL)
-        .then(response => response.json()) // Convert response to JSON
-        .then(data => {
-            let studentList = document.getElementById("student-list");
+    const studentList = document.getElementById("student-list");
 
-            // Check if JSON contains 'students' array
-            if (data.students && Array.isArray(data.students)) {
-                data.students.forEach(student => {
-                    let listItem = document.createElement("li");
-                    listItem.textContent = `${student.name} - ${student.age} (Course: ${student.course})`;
-                    studentList.appendChild(listItem);
-                });
-            } else {
-                console.error("Expected 'students' array but got:", data);
-            }
-        })
-        .catch(error => console.error("Error fetching JSON:", error));
-    </script>
+    fetch(jsonURL)
+    .then(response => response.json())
+    .then(data => {
+        if (data.students && Array.isArray(data.students)) {
+            data.students.forEach(student => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${student.name} - ${student.age} (Course: ${student.course})`;
+                studentList.appendChild(listItem);
+            });
+        } else {
+            console.error("Expected 'students' array but got:", data);
+        }
+    })
+    .catch(error => console.error("Error fetching JSON:", error));
+</script>
 </body>
 </html>
